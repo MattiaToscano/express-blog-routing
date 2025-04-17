@@ -24,8 +24,15 @@ router.post('/', (req,res)=>{
 
 //Update
 router.post('/:id', (req,res)=>{
-    res.send(`Modifica del post, ${req.params.id}`);
+    res.send(`Modifica totale del post, ${req.params.id}`);
 })
+
+//Modify
+router.post('/:id',(req,res)=>{
+    res.send(`Modifica parziale del post, ${req.params.id}`);
+})
+
+
 
 
 
