@@ -13,3 +13,14 @@ router.get('/:id', (req,res)=> {
 });
 
 //Show
+router.get('/', (req,res)=>{
+    res.send(`Dettagli post', ${req.params.id}`);
+});
+
+//Store
+router.post('/:id', (req,res)=>{
+    res.send(`Inserimento post, ${req.params.id}`)
+});
+
+
+
