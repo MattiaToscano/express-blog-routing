@@ -8,4 +8,8 @@ const router = express.Router();
 const post = require('../posts')
 
 //index
-router
+router.get('/:id', (req,res)=> {
+    res.send('Lista dei posts')
+});
+
+//Show
