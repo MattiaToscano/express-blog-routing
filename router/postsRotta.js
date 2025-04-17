@@ -23,21 +23,21 @@ router.post('/', (req,res)=>{
 });
 
 //Update
-router.post('/:id', (req,res)=>{
+router.put('/:id', (req,res)=>{
     res.send(`Modifica totale del post, ${req.params.id}`);
 });
 
 //Modify
-router.post('/:id',(req,res)=>{
+router.patch('/:id',(req,res)=>{
     res.send(`Modifica parziale del post, ${req.params.id}`);
 });
 
 //Destroy
-router.post('/:id', (req,res)=>{
+router.delete('/:id', (req,res)=>{
     res.send(`Eliminazione del post, ${req.params.id}`);
 });
 
-
-
+//Esporto postsRotta
+module.exports =(router)
 
 

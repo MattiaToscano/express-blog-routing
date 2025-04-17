@@ -8,7 +8,10 @@ const app = express();
 const port = 3000;
 
 //Importo il router
-const postsRotta = ('./router/postsRotta');
+const postsRotta = require ('./router/postsRotta');
+
+//Utilizzo postsRotta 
+app.use('/posts', postsRotta);
 
 //Definisco la mainpage
 app.get('/', (req,res) =>{
