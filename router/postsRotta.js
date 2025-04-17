@@ -19,18 +19,23 @@ router.get('/:id', (req,res)=>{
 
 //Store
 router.post('/', (req,res)=>{
-    res.send(`Inserimento post`)
+    res.send(`Inserimento post`);
 });
 
 //Update
 router.post('/:id', (req,res)=>{
     res.send(`Modifica totale del post, ${req.params.id}`);
-})
+});
 
 //Modify
 router.post('/:id',(req,res)=>{
     res.send(`Modifica parziale del post, ${req.params.id}`);
-})
+});
+
+//Destroy
+router.post('/:id', (req,res)=>{
+    res.send(`Eliminazione del post, ${req.params.id}`);
+});
 
 
 
