@@ -7,7 +7,10 @@ const app = express();
 //Definisco la porta
 const port = 3000;
 
-//Definisco la rotta
+//Importo il router
+const postsRotta = ('./router/postsRotta');
+
+//Definisco la mainpage
 app.get('/', (req,res) =>{
     res.send('Mainpage')
 })
